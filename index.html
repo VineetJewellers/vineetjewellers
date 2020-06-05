@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vineet Jewellers</title>
+    </head>
+    <script>function main(){
+//writing Date function for invoice date
+    var d= new Date();
+var yy=d.getFullYear();
+var mm=d.getMonth()+1;
+var dd=d.getDate();
+var date=dd+"/"+mm+"/"+yy;
+document.getElementById("ind").value=date
+//end of function 
+
+calculate()
+calculate ()
+}
+function pnt(){
+     btns=document.getElementById("btns").style.display="none"
+     window.print()
+}
+
+//new function 
+
+
+function calculate(){
+//writing functions to automate
+
+//selecting values of inputs
+var nrt1=Number(document.getElementById("rt1").value)
+var nrt2=Number(document.getElementById("rt2").value)
+var nrt3=Number(document.getElementById("rt3").value)
+var nrt4=Number(document.getElementById("rt4").value)
+var nrt5=Number(document.getElementById("rt5").value)
+var nrt6=Number(document.getElementById("rt6").value)
+var nrt7=Number(document.getElementById("rt7").value)
+var nrt8=Number(document.getElementById("rt8").value)
+var nrt9=Number(document.getElementById("rt9").value)
+
+
+var ntds=Number(document.getElementById("tds").value)
+var tds=document.getElementById("tds").value
+
+
+
+var art1=nrt1/10
+var art2=nrt2/10
+var art3=nrt3/10
+var art4=nrt4/10
+var art5=nrt5/10
+var art6=nrt6/10
+var art7=nrt7/10
+var art8=nrt8/10
+var art9=nrt9/10
+
+var srt1=nrt1/1000
+var srt2=nrt2/1000
+var srt3=nrt3/1000
+var srt4=nrt4/1000
+var srt5=nrt5/1000
+var srt6=nrt6/1000
+var srt7=nrt7/1000
+var srt8=nrt8/1000
+var srt9=nrt9/1000
+
+
+var ndis1=Number(document.getElementById("dis1").value)
+var ndis2=Number(document.getElementById("dis2").value)
+var ndis3=Number(document.getElementById("dis3").value)
+var ndis4=Number(document.getElementById("dis4").value)
+var ndis5=Number(document.getElementById("dis5").value)
+var ndis6=Number(document.getElementById("dis6").value)
+var ndis7=Number(document.getElementById("dis7").value)
+var ndis8=Number(document.getElementById("dis8").value)
+var ndis9=Number(document.getElementById("dis9").value)
+var nqty1=Number(document.getElementById("qty1").value)
+var nqty2=Number(document.getElementById("qty2").value)
+var nqty3=Number(document.getElementById("qty3").value)
+var nqty4=Number(document.getElementById("qty4").value)
+var nqty5=Number(document.getElementById("qty5").value)
+var nqty6=Number(document.getElementById("qty6").value)
+var nqty7=Number(document.getElementById("qty7").value)
+var nqty8=Number(document.getElementById("qty8").value)
+var nqty9=Number(document.getElementById("qty9").value)
+var nwt1=Number(document.getElementById("wt1").value)
+var nwt2=Number(document.getElementById("wt2").value)
+var nwt3=Number(document.getElementById("wt3").value)
+var nwt4=Number(document.getElementById("wt4").value)
+var nwt5=Number(document.getElementById("wt5").value)
+var nwt6=Number(document.getElementById("wt6").value)
+var nwt7=Number(document.getElementById("wt7").value)
+var nwt8=Number(document.getElementById("wt8").value)
+var nwt9=Number(document.getElementById("wt9").value)
+
+
+var nwtt1=Number(document.getElementById("wtt1").value)
+var nwtt2=Number(document.getElementById("wtt2").value)
+var nwtt3=Number(document.getElementById("wtt3").value)
+var nwtt4=Number(document.getElementById("wtt4").value)
+var nwtt5=Number(document.getElementById("wtt5").value)
+var nwtt6=Number(document.getElementById("wtt6").value)
+var nwtt7=Number(document.getElementById("wtt7").value)
+var nwtt8=Number(document.getElementById("wtt8").value)
+var nwtt9=Number(document.getElementById("wtt9").value)
+
+var nmkg1=Number(document.getElementById("mkg1").value)
+var nmkg2=Number(document.getElementById("mkg2").value)
+var nmkg3=Number(document.getElementById("mkg3").value)
+var nmkg4=Number(document.getElementById("mkg4").value)
+var nmkg5=Number(document.getElementById("mkg5").value)
+var nmkg6=Number(document.getElementById("mkg6").value)
+var nmkg7=Number(document.getElementById("mkg7").value)
+var nmkg8=Number(document.getElementById("mkg8").value)
+var nmkg9=Number(document.getElementById("mkg9").value)
+
+dis1=document.getElementById("dis1").value
+var dis2=document.getElementById("dis2").value
+var dis3=document.getElementById("dis3").value
+var dis4=document.getElementById("dis4").value
+var dis5=document.getElementById("dis5").value
+var dis6=document.getElementById("dis6").value
+var dis7=document.getElementById("dis7").value
+var dis8=document.getElementById("dis8").value
+var dis9=document.getElementById("dis9").value
+var qty1=document.getElementById("qty1").value
+var qty2=document.getElementById("qty2").value
+var qty3=document.getElementById("qty3").value
+var qty4=document.getElementById("qty4").value
+var qty5=document.getElementById("qty5").value
+var qty6=document.getElementById("qty6").value
+var qty7=document.getElementById("qty7").value
+var qty8=document.getElementById("qty8").value
+var qty9=document.getElementById("qty9").value
+var wt1=document.getElementById("wt1").value
+var wt2=document.getElementById("wt2").value
+var wt3=document.getElementById("wt3").value
+var wt4=document.getElementById("wt4").value
+var wt5=document.getElementById("wt5").value
+var wt6=document.getElementById("wt6").value
+var wt7=document.getElementById("wt7").value
+var wt8=document.getElementById("wt8").value
+var wt9=document.getElementById("wt9").value
+
+wtt1=document.getElementById("wtt1").value
+var wtt2=document.getElementById("wtt2").value
+var wtt3=document.getElementById("wtt3").value
+var wtt4=document.getElementById("wtt4").value
+var wtt5=document.getElementById("wtt5").value
+var wtt6=document.getElementById("wtt6").value
+var wtt7=document.getElementById("wtt7").value
+var wtt8=document.getElementById("wtt8").value
+var wtt9=document.getElementById("wtt9").value
+
+var mkg1=document.getElementById("mkg1").value
+var mkg2=document.getElementById("mkg2").value
+var mkg3=document.getElementById("mkg3").value
+var mkg4=document.getElementById("mkg4").value
+var mkg5=document.getElementById("mkg5").value
+var mkg6=document.getElementById("mkg6").value
+var mkg7=document.getElementById("mkg7").value
+var mkg8=document.getElementById("mkg8").value
+var mkg9=document.getElementById("mkg9").value
+
+var clr1=document.getElementById("clr1")
+var clr2=document.getElementById("clr2")
+var clr3=document.getElementById("clr3")
+var clr4=document.getElementById("clr4")
+var clr5=document.getElementById("clr5")
+var clr6=document.getElementById("clr6")
+var clr7=document.getElementById("clr7")
+var clr8=document.getElementById("clr8")
+var clr9=document.getElementById("clr9")
+
+//writing so that input auto will only work only when form is filled
+
+if(dis1.length==0 && qty1.length==0 && wt1.length==0 && mkg1.length==0){
+    nwt1=0;
+    nwtt1=0;
+    ramt1=0;
+    
+
+}
+
+if(dis2.length==0 && qty3.length==0 && wt2.length==0 && mkg2.length==0){
+    nwt2=0;
+    nwtt2=0;
+    ramt2=0;
+}
+
+if(dis3.length==0 && qty3.length==0 && wt3.length==0 && mkg3.length==0 ){
+    nwt3=0;
+    nwtt3=0;
+    ramt3=0;
+}
+
+if(dis4.length==0 && qty4.length==0 && wt4.length==0 && mkg4.length==0 ){
+    nwt4=0;
+    nwtt4=0;
+    ramt4=0;
+}
+
+if(dis5.length==0 && qty5.length==0 && wt5.length==0 && mkg5.length==0 ){
+    nwt5=0;
+    nwtt5=0;
+    ramt5=0;
+}
+
+if(dis6.length==0 && qty6.length==0 && wt6.length==0 && mkg6.length==0 ){
+    nwt6=0;
+    nwtt6=0;
+    ramt6=0;
+}
+
+if(dis7.length==0 && qty7.length==0 && wt7.length==0 && mkg7.length==0 ){
+    nwt7=0;
+    nwtt7=0;
+    ramt7=0;
+}
+
+if(dis8.length==0 && qty8.length==0 && wt8.length==0 && mkg8.length==0 ){
+    nwt8=0;
+    nwtt8=0;
+    ramt8=0;
+}
+
+if(dis9.length==0 && qty9.length==0 && wt9.length==0 && mkg9.length==0 ){
+    nwt9=0;
+    nwtt9=0;
+    ramt9=0;
+}
+
+if(tds.length==0){
+    ntds=0
+    document.getElementById("tds").value=0.00
+}
+
+
+
+
+
+
+
+
+
+
+//for 1st row
+if(dis1.length>0 && qty1.length>0 && wt1.length>0 && mkg1.length>0){
+
+var w1=wt1/11.664
+tw1=w1.toFixed(4)
+document.getElementById("wtt1").value=tw1
+
+
+if(clr1.value=="gold"){
+  var ramt1=(art1*nwt1*nqty1)+nmkg1
+document.getElementById("amt1").value=ramt1
+clr1.style.backgroundColor="gold"
+clr1.style.color="gold"
+  
+}
+
+if(clr1.value=="silver"){
+  var ramt1=(srt1*nwt1*nqty1)+nmkg1
+document.getElementById("amt1").value=ramt1
+clr1.style.backgroundColor="silver"
+clr1.style.color="silver"
+
+}
+
+}
+//for 2nd row
+if(dis2.length>0 && qty2.length>0 && wt2.length>0 && mkg2.length>0){
+
+var w2=wt2/11.664
+tw2=w2.toFixed(4)
+document.getElementById("wtt2").value=tw2
+
+if(clr2.value=="gold"){
+  var ramt2=(art2*nwt2*nqty2)+nmkg2
+document.getElementById("amt2").value=ramt2
+clr2.style.backgroundColor="gold"
+clr2.style.color="gold"
+  
+}
+
+if(clr2.value=="silver"){
+  var ramt2=(srt2*nwt2*nqty2)+nmkg2
+document.getElementById("amt2").value=ramt2
+clr2.style.backgroundColor="silver"
+clr2.style.color="silver"
+
+}
+
+}
+//function for 3rd row
+if(dis3.length>0 && qty3.length>0 && wt3.length>0 && mkg3.length>0){
+
+
+var w3=wt3/11.664
+tw3=w3.toFixed(4)
+document.getElementById("wtt3").value=tw3
+
+if(clr3.value=="gold"){
+  var ramt3=(art3*nwt3*nqty3)+nmkg3
+document.getElementById("amt3").value=ramt3
+clr3.style.backgroundColor="gold"
+clr3.style.color="gold"
+  
+}
+
+if(clr3.value=="silver"){
+  var ramt3=(srt3*nwt3*nqty3)+nmkg3
+document.getElementById("amt3").value=ramt3
+clr3.style.backgroundColor="silver"
+clr3.style.color="silver"
+
+}
+}
+//function for 4th row
+if(dis4.length>0 && qty4.length>0 && wt4.length>0 && mkg4.length>0){
+
+
+var w4=wt4/11.664
+tw4=w4.toFixed(4)
+document.getElementById("wtt4").value=tw4
+
+if(clr4.value=="gold"){
+  var ramt4=(art4*nwt4*nqty4)+nmkg4
+document.getElementById("amt4").value=ramt4
+clr4.style.backgroundColor="gold"
+clr4.style.color="gold"
+  
+}
+
+if(clr4.value=="silver"){
+  var ramt4=(srt4*nwt4*nqty4)+nmkg4
+document.getElementById("amt4").value=ramt4
+clr4.style.backgroundColor="silver"
+clr4.style.color="silver"
+
+}
+
+
+}
+//function for 5th row
+if(dis5.length>0 && qty5.length>0 && wt5.length>0 && mkg5.length>0){
+
+var w5=wt5/11.664
+tw5=w5.toFixed(4)
+document.getElementById("wtt5").value=tw5
+
+if(clr5.value=="gold"){
+  var ramt5=(art5*nwt5*nqty5)+nmkg5
+document.getElementById("amt5").value=ramt5
+clr5.style.backgroundColor="gold"
+clr5.style.color="gold"
+  
+}
+
+if(clr5.value=="silver"){
+  var ramt5=(srt5*nwt5*nqty5)+nmkg5
+document.getElementById("amt5").value=ramt5
+clr5.style.backgroundColor="silver"
+clr5.style.color="silver"
+
+}
+
+}
+//function for 6th row
+if(dis6.length>0 && qty6.length>0 && wt6.length>0 && mkg6.length>0){
+
+
+var w6=wt6/11.664
+tw6=w6.toFixed(4)
+document.getElementById("wtt6").value=tw6
+
+if(clr6.value=="gold"){
+  var ramt6=(art6*nwt6*nqty6)+nmkg6
+document.getElementById("amt6").value=ramt6
+clr6.style.backgroundColor="gold"
+clr6.style.color="gold"
+  
+}
+
+if(clr1.value=="silver"){
+  var ramt6=(srt6*nwt6*nqty6)+nmkg6
+document.getElementById("amt6").value=ramt6
+clr6.style.backgroundColor="silver"
+clr6.style.color="silver"
+
+}
+
+}
+//function for 7th row
+if(dis7.length>0 && qty7.length>0 && wt7.length>0 && mkg7.length>0){
+
+var w7=wt7/11.664
+tw7=w7.toFixed(4)
+document.getElementById("wtt7").value=tw7
+
+if(clr7.value=="gold"){
+  var ramt7=(art7*nwt7*nqty7)+nmkg7
+document.getElementById("amt7").value=ramt7
+clr7.style.backgroundColor="gold"
+clr7.style.color="gold"
+  
+}
+
+if(clr7.value=="silver"){
+  var ramt7=(srt7*nwt7*nqty7)+nmkg7
+document.getElementById("amt7").value=ramt7
+clr7.style.backgroundColor="silver"
+clr7.style.color="silver"
+
+}
+
+}
+//function for 8th row
+if(dis8.length>0 && qty8.length>0 && wt8.length>0 && mkg8.length>0){
+
+var w8=wt8/11.664
+tw8=w8.toFixed(4)
+document.getElementById("wtt8").value=tw8
+
+if(clr8.value=="gold"){
+  var ramt8=(art8*nwt8*nqty8)+nmkg8
+document.getElementById("amt8").value=ramt8
+clr8.style.backgroundColor="gold"
+clr8.style.color="gold"
+  
+}
+
+if(clr8.value=="silver"){
+  var ramt8=(srt8*nwt8*nqty8)+nmkg8
+document.getElementById("amt8").value=ramt8
+clr8.style.backgroundColor="silver"
+clr8.style.color="silver"
+
+}
+
+}
+//function for 9th row
+if(dis9.length>0 && qty9.length>0 && wt9.length>0 && mkg9.length>0){
+
+var w9=wt9/11.664
+tw9=w9.toFixed(4)
+document.getElementById("wtt9").value=tw9
+
+if(clr9.value=="gold"){
+  var ramt9=(art9*nwt9*nqty9)+nmkg9
+document.getElementById("amt9").value=ramt9
+clr9.style.backgroundColor="gold"
+clr9.style.color="gold"
+  
+}
+
+if(clr9.value=="silver"){
+  var ramt9=(srt9*nwt9*nqty9)+nmkg9
+document.getElementById("amt9").value=ramt9
+clr9.style.backgroundColor="silver"
+clr9.style.color="silver"
+
+}
+
+
+
+}
+var twt=nwt1+nwt2+nwt3+nwt4+nwt5+nwt6+nwt7+nwt8+nwt9
+
+document.getElementById("twt").value=twt+"g"
+var twtt=nwtt1+nwtt2+nwtt3+nwtt4+nwtt5+nwtt6+nwtt7+nwtt8+nwtt9
+document.getElementById("twtt").value=twtt+"t"
+var tamt=ramt1+ramt2+ramt3+ramt4+ramt5+ramt6+ramt7+ramt8+ramt9
+document.getElementById("tamt").value=tamt
+var sttl=tamt-ntds
+document.getElementById("sttl").value=sttl
+
+
+}
+</script>
+    <style>body {
+    /*css for table*/
+}table{
+height:17cm;
+width:10cm;
+border:2px solid orangered;}
+/*making borders*/
+table,th,td,tr{border:2px solid re;
+border-collapse:collapse ;}
+/*paragraph font size*/
+p{font-size:13px;}
+#ntbl{height:6.0cm;
+
+}
+#scnd{border-bottom:2px solid orangered;}
+.rules{
+    font-size:8px;
+    color:darkslategray;
+    margin-left:3px;
+    
+}
+#tds{width:1.3cm;}
+#dn{
+    width:2.2cm;
+    font-weight:bold;
+}
+ul{width:100%;
+height:1cm;
+    padding:0px;
+    margin:0px;
+}
+#ttlfw{
+    width:4.29cm;
+    font-weight:bold;
+    border-right:2px solid gol;
+}
+#lb{
+    font-family:serif;
+    font-size:15px;
+    height:1cm;
+}
+li{border:2px solid red;
+font-size:15px;
+height:.3;}
+#li{
+    height:.6cm;
+    font-size:15px;
+}
+#scol{width:3.5cm;
+height:.8cm;
+border:2px solid re;}
+/*css for image*/
+#img{
+    width:80px;
+    height:80px;
+    border-radius:5px;
+    margin:px;
+    padding:px;
+    transform:translateX(6px);
+}
+#sign{width:3.5cm;
+height:1cm;}
+#foot{
+    height:.5cm;
+    background-color:;
+}
+/*removing padding and margins from elements*/
+div,table,th,td,tr,p,h1,h2,h3,h4,h5,li,h6{
+    padding:0px;
+    margin:0px;
+}
+/*setting font size for shop address line:12*/
+#cat{
+    font-size:20px;
+    margin:5px;
+    
+    transform:translate(20px,-5px);
+color:darkslategray;
+}
+#tc{
+    height:8px;
+    font-size:1px ;
+    font-weight:bold;
+    color:darkslategray;
+}
+/*css for shop name* line:13*/
+#hd2{
+    color:maroon;
+    font-family:cursive;
+    font-size:20px;
+    font-weight:normal;
+  transform:translate(15px,5px);}
+#hd{
+    color:maroon;
+    font-family:cursive;
+    font-size:20px;
+    font-weight:bolder;
+  transform:translateY();
+    
+}
+#hd,#hd2{
+    transform:translateX(-40px);
+}
+/*css for input labels*/
+label{
+    font-size:10px;
+}
+/*css for specific input tags*/
+#inno,#ind,#nam,#ad,#phone{
+    width:1cm;
+    height:18px;
+    font-size:12px;
+    border:none;
+    color:darkslategray;
+    background-color:white;
+    margin:2px;
+    
+}
+#inno{width:.9cm;}
+/*css for phone*/
+#phone{
+    width:50%;
+}
+/*css for name*/
+#nam{
+    width:89%;
+}
+/*css for address*/
+#ad{width:79%;}
+/*css for upper section*/
+.up{background-color:white;
+color:darkslategray;
+border-bottom:2px solid orangered;}
+/*css for contact info */
+#info{
+    width:3.5cm;
+    color:maroon;
+}
+#info,#cat{font-size:20px;}
+/*css for call icon*/
+#phn{
+    width:25px;
+    height:25px;
+    float:left;
+    margin:3px;
+}
+/*css for line*/
+#line{
+    background-color:;
+    height:0.001px;
+    border:1px solid to;
+}
+/*css for invoice date*/
+#ind{
+    width:1.3cm;
+}
+.up{height:1.5cm;}
+
+#cname,#scnd,#cinfo{
+    height:15px;
+}
+#logo{width:3cm;}
+#invic{
+    font-size:15px;
+    font-weight:bolder;
+    font-family:Serif;
+    transform:translateX(60px);
+}
+
+/*CSS for inner Table*/
+/*CSS for th td and table*/
+#tbl{
+    margin:2px;
+}
+.th,#tbl{
+    border:2px solid gold;
+    border-collapse:collapse ;
+    font-size:10px;
+    font-family:serif;
+}
+.tr{
+    border:2px solid gold;
+    border-left:none;
+    border-right:none;
+}
+#ah{border-right:none;}
+#sln{border-left:none;}
+#tbl{
+    border:none;
+}
+#ld{border-left:none;}
+.td{
+    border-right:2px solid gold;
+}
+#a,#b,#c,#d,#e,#f,#g,#h,#go,#j{
+    border-right:none;
+}
+#lr{border:2px solid gold;
+border-left:none;
+border-right:none;}
+/*CSS for table*/
+#tbl{width:11.7cm;
+height:6cm;
+}
+/*CSS for all the input fields discription, quantity, rate, total amount,Amount, Making,weight*/
+.clr,.dis,.qty,.rt,.tamt,.wtt,.amt,.mkg,.clr,.wt{background-color:white;
+border:none;
+height:.4cm;
+width:;
+color:black;
+font-size:10px;}
+/* css for discription*/
+.clr{width:.4cm;
+height:.36cm;
+border-radius:100%;
+color:;
+    input{
+        font-size:15px;
+    }
+}
+.dis{
+    width:3.54cm;
+}
+/*css for quantity*/
+.qty{
+    width:.6cm;
+}
+/*css for rate*/
+.rt{
+    width:1.1cm;
+}
+/*css for amount*/
+.amt{
+    width:1.4cm;
+    
+}
+/*css for making*/
+.mkg{width:1cm;}
+/*css for weight*/
+.wt{
+    width:1.2cm;
+}
+.wtt{
+    width:1.5cm;
+}
+/*css for total*/
+#ttl{
+    font-weight:bold;
+}
+/*css for total amount*/
+#tamt{
+    width:1.3cm;
+}
+#btns{border:2px solid orangered;
+border-radius:5px;
+width:250px;
+height:70px;
+margin:50px;}
+.th{
+    font-size:9px;
+}
+button{
+    birder:none;
+    border-radius:5px;
+    color:white;
+    background-color:tomato;
+    border:none;
+    width:2cm;
+    height:.8cm;
+    margin:20px;
+}
+#sttln{
+    width:2.2cm;
+    font-weight:bold;
+    color:mediumseagreen;
+}
+#sttl{
+    width:1.3cm;
+}
+#fln{border:2px solid gold;
+border-bottom:none;
+border-left:none;}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <body>
+    <!--creating main table-->
+        <table>
+        <!--first row-->
+            <tr class="up">
+            <td class="up"id="logo">
+            <img id="img" src="https://imagehost.com.au//d7amw0Kd9r/Project Capture (3)_5eda6fb1c1809.jpg">
+            <p style="font-size:8px;font-family:serif;margin-left:3px;"><b>Prop:Rakesh Kumar</b></p>
+            <td class="ip">
+              <div id="cat">
+                            <img style="width:40px;float:left;transform:translate(-50px,-5px)"src="https://imagehost.com.au//d7amw0Kd9r/Project Capture (4)_5eda02f2a5cb6.jpg"><p id="hd2">विनीत ज्वेलर्स</p> 
+                <p id="hd">Vineet Jewellers</p>
+                <p>Main Road, Sonapur</p>
+                <p>Araria, Bihar, 854316</p>
+                
+                
+            </div>
+            </td>
+            <td class="up"id="info"><img id="phn" src="https://imagehost.com.au//d7amw0Kd9r/PicsArt_06-05-01.39.28_5eda001b843da.png">
+                <p>9934800007,<br>9939222511</p>
+<p style="font-size:10px;font-weight:bold;">rakeshraju2511@gmail.com</p>
+            </td>
+            <!--end of first row-->
+            </tr>
+            <!--second row-->
+            <tr>
+                <td id="line"colspan"3"></td>
+                <td id="line"></td>
+                <td id="line"></td>
+            </tr>
+            <!--end of second row-->
+            <!--third row-->
+                <tr id=scnd><td id="inn"colspan=""><label for="inno" style="margin-left:3px;">
+                <b>Invoice No:</b>
+            </label>
+            <input type="number" value="" name="inno" id="inno"></td>
+            <td id="invic">INVOICE</td>
+            <td id="invd"><label for="ind"id="in"><b>Invoice Date:</b></label><input disabled value="" name="ind" id="ind"></td>
+            <!--end of third row-->
+            </tr>
+            <!--fourth row-->
+            <tr id=cname style="border-bottom:2px solid orangered;">
+                <td colspan="3"><label for="nam" style="margin-left:3px;"><b>Name:</b></label><input type="text"value=""id="nam"name="nam"></td>
+            </tr>
+            <tr id="cinfo" style="border-bottom:2px solid orangered;"><td colspan="2"><label for="ad"style="margin-left:3px;" ><b>Address:</b></label><input type="text"value=""id="ad"name="ad"></td>
+                <td><label for="phone"><b>Phone No.:</b></label><input type="number"value=""id="phone"name="phone"></td><!--end of fourth row-->
+            </tr>
+            <!--fifth row-->
+            <tr id="ftbl">
+                <td id="ntbl" colspan="3">
+                    <!--creating a new inner table-->
+                    
+        <table id="tbl">
+            <tr class="tr">
+                <th class="th" id="ld"></th>
+                <th class="th">Description</th>
+                <th class="th">Qty.</th>
+                <th class="th">Wt.(g)</th>
+                <th class="th">Weight(t)</th>
+                
+                <th class="th">Making</th>
+            <th class="th">Rate</th>
+            <th class="th" id="ah">Amount</th>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr1" list="mat"></td>
+                <td class="td"><input class="dis"list="pdct" id="dis1"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty1"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt1"type="number" value=""></td>
+                <td class="td">
+                <input class="wtt" disabled id="wtt1"type="number" value=""></td>    
+                </td>
+                <td class="td">
+                          <input class="mkg" id="mkg1"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt1"type="number" name="rt"value=""></td>
+                <td class="td" id="a">
+                   
+                <input disabled name="amt" class="amt" id="amt1"type="number" value=""></td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr2" list="mat"></td>
+                <td class="td"><input class="dis" list="pdct"id="dis2"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty2"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt2"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt2"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg2"name="mkg"type="number" value="">
+                </td>
+               <td class="td"><input  class="rt" id="rt2"type="number" name="rt"value=""></td>
+                <td class="td" id="b">
+                   
+                <input disabled name="amt" class="amt" id="amt2"type="number" value=""></td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr3" list="mat"></td>
+                <td class="td"><input class="dis" list="pdct"id="dis3"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty3"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt3"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt3"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg3"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt3"type="number" name="rt"value=""></td>
+                <td class="td" id="j">
+                   
+                <input disabled name="amt" class="amt" id="amt3"type="number" value=""></td>
+                
+            </tr>
+            <tr class="tr">
+    <td class="td"><input type="text" value="" class="clr" id="clr4" list="mat"></td>
+                <td class="td"><input class="dis"list="pdct" id="dis4"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty4"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt4"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt4"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg4"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt4"type="number" name="rt"value=""></td>
+                <td class="td" id="c">
+                   
+                <input disabled name="amt" class="amt" id="amt4"type="number" value=""></td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr5" list="mat"></td>
+                <td class="td"><input class="dis"list="pdct" id="dis5"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty5"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt5"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt5"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg5"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt5"type="number" name="rt"value=""></td>
+                <td class="td" id="d">
+                   
+                <input disabled name="amt" class="amt" id="amt5"type="number" value=""></td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr6" list="mat"></td>
+                <td class="td"><input class="dis"list="pdct" id="dis6"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty6"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt6"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt6"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg6"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt6"type="number" name="rt"value=""></td>
+                <td class="td" id="e">
+                   
+                <input disabled name="amt" class="amt" id="amt6"type="number" value=""></td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr7" list="mat"></td>
+                <td class="td"><input class="dis"list="pdct" id="dis7"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty7"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt7"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt7"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg7"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt7"type="number" name="rt"value=""></td>
+                <td class="td" id="f">
+                   
+                <input disabled name="amt" class="amt" id="amt7"type="number" value=""></td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr8" list="mat"></td>
+                <td class="td"><input class="dis" list="pdct" id="dis8"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty8"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt8"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt8"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg8"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt8"type="number" name="rt"value=""></td>
+                <td class="td" id="g">
+                   
+                <input disabled name="amt" class="amt" id="amt8"type="number" value=""></td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><input type="text" value="" class="clr" id="clr9" list="mat"></td>
+                <td class="td"><input class="dis"list="pdct" id="dis9"type="text" value=""></td>
+                <td class="td"><input class="qty" id="qty9"type="number" value=""></td>
+                <td class="td">
+                <input class="wt" id="wt9"type="number" value=""></td>    
+                </td><td class="td">
+                <input class="wtt" disabled id="wtt9"type="number" value=""></td>    
+                <td class="td">
+                          <input class="mkg" id="mkg9"name="mkg"type="number" value="">
+                </td>
+                <td class="td"><input  class="rt" id="rt9"type="number" name="rt"value=""></td>
+                <td class="td" id="h">
+                   
+                <input disabled name="amt" class="amt" id="amt9"type="number" value=""></td>
+            </tr>
+            <tr id="lr">
+                <td id="ld"></td>
+                <td colspan="2" style="border-right:2px solid gold;"><input disabled class="rt"type="text" id="ttlfw"value="                                     Total Weight:"></td>
+                
+                <td style="border-right:2px solid gold;"> <input disabled name="amt" class="wt"type="text"id=twt value=""></td>
+                <td style="border-right:2px solid gold;"> <input disabled name="amt" class="wtt"type="text"id=twtt value=""></td>
+                <td></td>
+                <td class="td"><input disabled class="rt"type="text" id="ttl"value="  Total:"></td>
+                <td id="go"><label for="amt">Rs.</label>
+                <input disabled name="amt" class="amt"type="number"id=tamt value=""></td>
+            </tr>
+            
+            <tr class="tr">
+            <td class="td" id="fln"colspan="5" style="border-bottom:none;"></td>
+                <td colspan="2"class="td"><input  disabled class="rt"type="text" id="dn"value="           Discount:"></td>
+                <td id="go"><label for="amt">Rs.</label>
+                <input  name="amt" class="amt"type="number"id=tds value=""></td>
+            </tr>
+            
+              <tr class="tr">
+            <td class="td"id="fln" colspan="5"></td>
+                <td colspan="2"class="td"><input disabled class="rt"type="text" id="sttln"value="          Sub Total:"></td>
+                <td id="go"><label for="amt">Rs.</label>
+                <input disabled name="amt" class="amt"type="number"id=sttl value=""></td>
+            </tr>
+            
+        </table>
+
+                </td>
+                <!--end of fifth row-->
+            </tr>
+            <tr id="t&c">
+                <td id="tc" colspan="3"><p style="font-size:6px; background-color:; color:maroon;margin-left:7px;"> नियम एवं शर्तें*</p></td>
+                    
+               
+            </tr>
+            <tr>
+                <td colspan="3" id="li"style="transform:translatey(-5px)">
+                 <p class="rules">🔸हाथ का बना ज़ेवर वापस करने पर  वजन का 80% (भरी में 14 आना) मिलेगा </p> 
+                 <p class="rules">🔸हॉल मार्क ज़ेवर वापस करने पर 90% मिलेगा</p>
+                 <p class="rules">🔸जेवर का काला होना असुद्धता का प्रतीक नहीं हैं</p>
+                 <p class="rules">🔸रेट किया हुआ ज़ेवर 1 महीना तक ही रेट का मन रहेगा</p>
+                </td>
+            </tr>
+            <tr id="sin">
+                <td colspan="2"></td>
+                <td id="sign"><p><b>Signature:</b></p>
+                    <div id="scol"></div>
+                </td>
+            </tr>
+            <tr >
+                <td id="foot"colspan="3"></td>
+            </tr>
+        </table>
+        <datalist id="pdct">
+            <option value="पायल(दुल्हन)">
+            <option value="पायल(साजन)">
+            <option value="पायल(छाइगल)">
+            <option value="पायल(चैन,पट्टी,घुंगरू)">
+            <option value="पायल(सेटिंग,चन्नक,रावा)">
+            <option value="पायल(फैंसी)">
+            <option value="पायल(CV)">
+            <option value="पायल(IDEA)">
+            <option value="पायल(AV)">
+            <option value="पायल(घिरह,पट्टी)">
+            <option value="पायल(सिटिंग)">
+            <option value="पायल(चैन)">
+            <option value="पायल(S)">
+            <option value="चैन(सैटिंग)">    
+            <option value="चैन(जौ दान)">
+            <option value="चैन(S)">
+            <option value="चैन(सचिन)">
+            <option value="चैन(काठी)">
+            <option value="चैन(रस्सी)">
+            <option value="चैन(Snake)">
+            <option value="चैन(गोट)">
+            <option value="चैन(जंजीर)">
+            <option value="हार(मुस्कान)">
+            <option value="हार(फैंसी)">
+            <option value="नेकलेस सेट">
+            <option value="चिक सेट">
+            <option value="हार(long सेट)">
+            <option value="पेंडल सेट">
+            <option value="पेंडल">
+            <option value="झुमका(आरा)">
+            <option value="झुमका(मद्रासी)">
+            <option value="झुमका(फैंसी)">
+            <option value="अँगूठी(ladies)">
+            <option value="अँगूठी लेडीज(फैंसी)">
+            <option value="अँगूठी लेडीज(bombay pasting)">
+            <option value="अँगूठी(stone set)">
+            <option value="अँगूठी(AD)">
+            <option value="अँगूठी(पाँच फूल)">
+            <option value="अँगूठी(सादा)">
+            <option value="अँगूठी gents(fancy box)">
+            <option value="अँगूठी gents(casting)">
+            <option value="कान(round top)">
+            <option value="कान(fansy top)">
+            <option value="कान(fancy)">
+            <option value="कान(सुई-धागा)">
+            <option value="बाली(राजकोट)">   
+            <option value="बाली(bauti)">
+            <option value="टीका">
+            <option value="नथ">
+            <option value="नथ+लड़ी">
+            <option value="कान-चैन">
+            <option value="ढोलना">
+            <option value="god pendent">
+            <option value="मंगलसूत्र(फैंसी)">
+            <option value="मंगलसूत्र(with chain)">
+            <option value="कंगन">
+            <option value="बाला">
+            <option value="मठिया">
+            <option value="पोला">
+            <option value="चूड़ी">
+            <option value="छपका">
+            <option value="ग्लास">
+            <option value="कटोरी">
+            <option value="चम्मच">
+            <option value="मछली">
+            <option value="कीया">
+            <option value="सपड़ी">
+            <option value="दीप">
+            <option value="लक्ष्मी-गणेश सिक्का">
+            <option value="मुड़वा सिक्का">
+            <option value="जुड़वा सिक्का">
+            <option value="ब्रेसलेट(जेंट्स)">
+            <option value="ब्रेसलेट(लेडीज)">
+            <option value="हाथ-पान(1अंगूठी)">
+            <option value="हाथ-पान (5अंगूठी)">
+            <option value="हाथ-पान(AD Stone)">
+            <option value="ऐरिंग">
+            <option value="पेन">
+            <option value="कजरोटी">
+            <option value="लक्ष्मी-गणेश मूर्ति">
+            <option value="नोज पिन(plain)">
+            <option value="नोज पिन(Bombay)">
+            <option value="नोज पिन 3 पत्ती">
+            <option value="नोज पिन 3 चैन">
+            <option value="नोज पिन U चैन">
+            <option value="नोज रींग सानिया">
+            <option value="नथनी">
+            <option value="पायल(बच्चा)">
+            <option value="चैन(बच्चा)">
+            <option value="चैन(हनुमानी)">
+            <option value="चैन(लॉकेट)">
+        </datalist>
+        <datalist id="mat">
+            <option value="gold">
+            <option value="silver">
+        </datalist>
+        <!--end of main table-->
+        <div id="btns"><button onclick="main()">Calculate</button>
+        
+        <button style="background-color:mediumseagreen;"onclick="pnt()">Print</button></div>
+    </body>
+</html>
