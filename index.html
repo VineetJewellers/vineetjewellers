@@ -17,6 +17,9 @@ document.getElementById("ind").value=date
 calculate()
 calculate ()
 }
+function show(){
+    btns=document.getElementById("btns").style.display="inline-block"
+}
 function pnt(){
      btns=document.getElementById("btns").style.display="none"
      window.print()
@@ -55,6 +58,8 @@ var nrt9=Number(document.getElementById("rt9").value)
 
 var grt=Number(document.getElementById("gptv").value)
 
+var grt1=document.getElementById("gptv").value
+
 var sirt=Number(document.getElementById("sptv").value)
 
 var sirt1=document.getElementById("sptv").value
@@ -62,7 +67,17 @@ var sirt1=document.getElementById("sptv").value
 var ntds=Number(document.getElementById("tds").value)
 var tds=document.getElementById("tds").value
 
-var hog=sirt/85.7339
+
+var gort=grt*7/6
+var gptv=gort.toFixed(2)
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("gptv").value=gptv}
+
+
+var hog=sirt/85.735260233307
 var sptv=hog.toFixed(2)
 if(Number.isInteger(sirt)==true)
 {
@@ -70,6 +85,15 @@ if(Number.isInteger(sirt)==true)
 
 document.getElementById("sptv").value=sptv}
 
+if(sirt1.length>0)
+{
+    document.getElementById("spt").value="                                  Silver Rate Per Tola:"
+}
+
+if(grt1.length>0)
+{
+    document.getElementById("gpt").value="                                    Gold Rate Per Tola:"
+}
 
 
 
@@ -282,17 +306,26 @@ if(tds.length==0){
 //for 1st row
 if(dis1.length>0 && qty1.length>0 && wt1.length>0 && mkg1.length>0){
 
-var w1=wt1/11.664
+var w1=wt1/11.6638125
 tw1=w1.toFixed(4)
 document.getElementById("wtt1").value=tw1
 
 
 if(clr1.value=="gold"){
-document.getElementById("rt1").value=grt
+
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt1").value=grt}
+
+
+
   var ramt1=(art1*nwt1*nqty1)+nmkg1
-document.getElementById("amt1").value=ramt1
+var ramtt1=ramt1.toFixed(2)
+document.getElementById("amt1").value=ramtt1
 clr1.style.backgroundColor="gold"
-clr1.style.color="gold"
+clr1.style.color="goldenrod"
   
 }
 
@@ -304,9 +337,10 @@ if(Number.isInteger(sirt)==true)
 
 document.getElementById("rt1").value=sirt}
   var ramt1=(srt1*nwt1*nqty1)+nmkg1
-document.getElementById("amt1").value=ramt1
+var ramtt1=ramt1.toFixed(2)
+document.getElementById("amt1").value=ramtt1
 clr1.style.backgroundColor="silver"
-clr1.style.color="silver"
+clr1.style.color="dodgerblue"
 
 }
 
@@ -314,18 +348,26 @@ clr1.style.color="silver"
 //for 2nd row
 if(dis2.length>0 && qty2.length>0 && wt2.length>0 && mkg2.length>0){
 
-var w2=wt2/11.664
+var w2=wt2/11.6638125
 tw2=w2.toFixed(4)
 document.getElementById("wtt2").value=tw2
 
 if(clr2.value=="gold"){
 
-document.getElementById("rt2").value=grt
+
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt2").value=grt}
+
+
 
   var ramt2=(art2*nwt2*nqty2)+nmkg2
-document.getElementById("amt2").value=ramt2
+var ramtt2=ramt2.toFixed(2)
+document.getElementById("amt2").value=ramtt2
 clr2.style.backgroundColor="gold"
-clr2.style.color="gold"
+clr2.style.color="goldenrod"
   
 }
 
@@ -338,9 +380,10 @@ document.getElementById("rt2").value=sirt}
 
 
   var ramt2=(srt2*nwt2*nqty2)+nmkg2
-document.getElementById("amt2").value=ramt2
+var ramtt2=ramt2.toFixed(2)
+document.getElementById("amt2").value=ramtt2
 clr2.style.backgroundColor="silver"
-clr2.style.color="silver"
+clr2.style.color="dodgerblue"
 
 }
 
@@ -349,18 +392,27 @@ clr2.style.color="silver"
 if(dis3.length>0 && qty3.length>0 && wt3.length>0 && mkg3.length>0){
 
 
-var w3=wt3/11.664
+var w3=wt3/11.6638125
 tw3=w3.toFixed(4)
 document.getElementById("wtt3").value=tw3
 
 if(clr3.value=="gold"){
 
-document.getElementById("rt3").value=grt
+
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt3").value=grt}
+
+
+
 
   var ramt3=(art3*nwt3*nqty3)+nmkg3
-document.getElementById("amt3").value=ramt3
+var ramtt3=ramt3.toFixed(2)
+document.getElementById("amt3").value=ramtt3
 clr3.style.backgroundColor="gold"
-clr3.style.color="gold"
+clr3.style.color="goldenrod"
   
 }
 
@@ -373,9 +425,10 @@ if(Number.isInteger(sirt)==true)
 document.getElementById("rt3").value=sirt}
 
   var ramt3=(srt3*nwt3*nqty3)+nmkg3
-document.getElementById("amt3").value=ramt3
+var ramtt3=ramt3.toFixed(2)
+document.getElementById("amt3").value=ramtt3
 clr3.style.backgroundColor="silver"
-clr3.style.color="silver"
+clr3.style.color="dodgerblue"
 
 }
 }
@@ -383,18 +436,25 @@ clr3.style.color="silver"
 if(dis4.length>0 && qty4.length>0 && wt4.length>0 && mkg4.length>0){
 
 
-var w4=wt4/11.664
+var w4=wt4/11.6638125
 tw4=w4.toFixed(4)
 document.getElementById("wtt4").value=tw4
 
 if(clr4.value=="gold"){
 
-document.getElementById("rt4").value=grt
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt4").value=grt}
+
+
 
   var ramt4=(art4*nwt4*nqty4)+nmkg4
-document.getElementById("amt4").value=ramt4
+var ramtt4=ramt4.toFixed(2)
+document.getElementById("amt4").value=ramtt4
 clr4.style.backgroundColor="gold"
-clr4.style.color="gold"
+clr4.style.color="goldenrod"
   
 }
 
@@ -406,9 +466,10 @@ if(Number.isInteger(sirt)==true)
 
 document.getElementById("rt4").value=sirt}
   var ramt4=(srt4*nwt4*nqty4)+nmkg4
-document.getElementById("amt4").value=ramt4
+var ramtt4=ramt4.toFixed(2)
+document.getElementById("amt4").value=ramtt4
 clr4.style.backgroundColor="silver"
-clr4.style.color="silver"
+clr4.style.color="dodgerblue"
 
 }
 
@@ -417,18 +478,25 @@ clr4.style.color="silver"
 //function for 5th row
 if(dis5.length>0 && qty5.length>0 && wt5.length>0 && mkg5.length>0){
 
-var w5=wt5/11.664
+var w5=wt5/11.6638125
 tw5=w5.toFixed(4)
 document.getElementById("wtt5").value=tw5
 
 if(clr5.value=="gold"){
 
-document.getElementById("rt5").value=grt
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt5").value=grt}
+
+
 
   var ramt5=(art5*nwt5*nqty5)+nmkg5
-document.getElementById("amt5").value=ramt5
+var ramtt5=ramt5.toFixed(2)
+document.getElementById("amt5").value=ramtt5
 clr5.style.backgroundColor="gold"
-clr5.style.color="gold"
+clr5.style.color="goldenrod"
   
 }
 
@@ -440,9 +508,10 @@ if(Number.isInteger(sirt)==true)
 document.getElementById("rt5").value=sirt}
 
   var ramt5=(srt5*nwt5*nqty5)+nmkg5
-document.getElementById("amt5").value=ramt5
+var ramtt5=ramt5.toFixed(2)
+document.getElementById("amt5").value=ramtt5
 clr5.style.backgroundColor="silver"
-clr5.style.color="silver"
+clr5.style.color="dodgerblue"
 
 }
 
@@ -451,51 +520,64 @@ clr5.style.color="silver"
 if(dis6.length>0 && qty6.length>0 && wt6.length>0 && mkg6.length>0){
 
 
-var w6=wt6/11.664
+var w6=wt6/11.6638125
 tw6=w6.toFixed(4)
 document.getElementById("wtt6").value=tw6
 
 if(clr6.value=="gold"){
 
-document.getElementById("rt6").value=grt
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt6").value=grt}
+
+
 
   var ramt6=(art6*nwt6*nqty6)+nmkg6
-document.getElementById("amt6").value=ramt6
+var ramtt6=ramt6.toFixed(2)
+document.getElementById("amt6").value=ramtt6
 clr6.style.backgroundColor="gold"
-clr6.style.color="gold"
+clr6.style.color="goldenrod"
   
 }
 
-if(clr1.value=="silver"){
-
+if(clr6.value=="silver"){
 if(Number.isInteger(sirt)==true)
 {
 
 
 document.getElementById("rt6").value=sirt}
   var ramt6=(srt6*nwt6*nqty6)+nmkg6
-document.getElementById("amt6").value=ramt6
+var ramtt6=ramt6.toFixed(2)
+document.getElementById("amt6").value=ramtt6
 clr6.style.backgroundColor="silver"
-clr6.style.color="silver"
-
+clr6.style.color="dodgerblue"
 }
 
 }
 //function for 7th row
 if(dis7.length>0 && qty7.length>0 && wt7.length>0 && mkg7.length>0){
 
-var w7=wt7/11.664
+var w7=wt7/11.6638125
 tw7=w7.toFixed(4)
 document.getElementById("wtt7").value=tw7
 
 if(clr7.value=="gold"){
 
-document.getElementById("rt7").value=grt
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt7").value=grt}
+
+
 
   var ramt7=(art7*nwt7*nqty7)+nmkg7
-document.getElementById("amt7").value=ramt7
+var ramtt7=ramt7.toFixed(2)
+document.getElementById("amt7").value=ramtt7
 clr7.style.backgroundColor="gold"
-clr7.style.color="gold"
+clr7.style.color="goldenrod"
   
 }
 
@@ -506,9 +588,10 @@ if(Number.isInteger(sirt)==true)
 
 document.getElementById("rt7").value=sirt}
   var ramt7=(srt7*nwt7*nqty7)+nmkg7
-document.getElementById("amt7").value=ramt7
+var ramtt7=ramt7.toFixed(2)
+document.getElementById("amt7").value=ramtt7
 clr7.style.backgroundColor="silver"
-clr7.style.color="silver"
+clr7.style.color="dodgerblue"
 
 }
 
@@ -516,22 +599,31 @@ clr7.style.color="silver"
 //function for 8th row
 if(dis8.length>0 && qty8.length>0 && wt8.length>0 && mkg8.length>0){
 
-var w8=wt8/11.664
+var w8=wt8/11.6638125
 tw8=w8.toFixed(4)
 document.getElementById("wtt8").value=tw8
 
 if(clr8.value=="gold"){
 
-document.getElementById("rt8").value=grt
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt8").value=grt}
+
+
 
   var ramt8=(art8*nwt8*nqty8)+nmkg8
-document.getElementById("amt8").value=ramt8
+var ramtt8=ramt8.toFixed(2)
+document.getElementById("amt8").value=ramtt8
 clr8.style.backgroundColor="gold"
-clr8.style.color="gold"
+clr8.style.color="goldenrod"
   
 }
 
 if(clr8.value=="silver"){
+
+
 
 if(Number.isInteger(sirt)==true)
 {
@@ -540,9 +632,10 @@ if(Number.isInteger(sirt)==true)
 document.getElementById("rt8").value=sirt}
 
   var ramt8=(srt8*nwt8*nqty8)+nmkg8
-document.getElementById("amt8").value=ramt8
+var ramtt8=ramt8.toFixed(2)
+document.getElementById("amt8").value=ramtt8
 clr8.style.backgroundColor="silver"
-clr8.style.color="silver"
+clr8.style.color="dodgerblue"
 
 }
 
@@ -550,18 +643,25 @@ clr8.style.color="silver"
 //function for 9th row
 if(dis9.length>0 && qty9.length>0 && wt9.length>0 && mkg9.length>0){
 
-var w9=(wt9/11.664) 
+var w9=(wt9/11.6638125) 
 tw9=w9.toFixed(4)
 document.getElementById("wtt9").value=tw9
 
 if(clr9.value=="gold"){
 
-document.getElementById("rt9").value=grt
+if(Number.isInteger(grt)==true)
+{
+
+
+document.getElementById("rt9").value=grt}
+
+
 
   var ramt9=(art9*nwt9*nqty9)+nmkg9
-document.getElementById("amt9").value=ramt9
+var ramtt9=ramt9.toFixed(2)
+document.getElementById("amt9").value=ramtt9
 clr9.style.backgroundColor="gold"
-clr9.style.color="gold"
+clr9.style.color="goldenrod"
   
 }
 
@@ -575,9 +675,10 @@ if(Number.isInteger(sirt)==true)
 document.getElementById("rt9").value=sirt}
 
   var ramt9=(srt9*nwt9*nqty9)+nmkg9
-document.getElementById("amt9").value=ramt9
+var ramtt9=ramt9.toFixed(2)
+document.getElementById("amt9").value=ramtt9
 clr9.style.backgroundColor="silver"
-clr9.style.color="silver"
+clr9.style.color="dodgerblue"
 
 }
 
@@ -588,11 +689,14 @@ var twt=(nwt1*nqty1)+(nwt2*nqty2)+(nwt3*nqty3)+(nwt4*nqty4)+(nwt5*nqty5)+(nwt6*n
 
 document.getElementById("twt").value=twt+"g"
 var twtt=(nwtt1*nqty1)+(nwtt2*nqty2)+(nwtt3*nqty3)+(nwtt4*nqty4)+(nwtt5*nqty5)+(nwtt6*nqty6)+(nwtt7*nqty7)+(nwtt8*nqty8)+(nwtt9*nqty9)
-document.getElementById("twtt").value=twtt+"t"
+ var twttt=twtt.toFixed(4)
+document.getElementById("twtt").value=twttt+"t"
 var tamt=ramt1+ramt2+ramt3+ramt4+ramt5+ramt6+ramt7+ramt8+ramt9
-document.getElementById("tamt").value=tamt
+var ttamt=tamt.toFixed(2)
+document.getElementById("tamt").value=ttamt
 var sttl=tamt-ntds
-document.getElementById("sttl").value=sttl
+var sttlr=sttl.toFixed(2)
+document.getElementById("sttl").value=sttlr
 
 
 }
