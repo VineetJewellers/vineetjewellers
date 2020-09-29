@@ -1,0 +1,17 @@
+{
+  "name": "Vineet Jewellers",
+  "short_name": "Vineet Jewellers",
+  "description": "Invoice Making Website for Vineet Jewellers ",
+  "icons": [
+
+    {
+      "src": "vineetjewellers.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://vineetjewellers.github.io/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#6633ff"
+}
